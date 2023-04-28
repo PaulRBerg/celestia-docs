@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcelestia_docs=self.webpackChunkcelestia_docs||[]).push([[2110],{4903:e=>{e.exports=JSON.parse('{"title":"QGB","slug":"/category/qgb","permalink":"/category/qgb","navigation":{"previous":{"title":"Validator node","permalink":"/nodes/validator-node"},"next":{"title":"Quantum Gravity Bridge","permalink":"/nodes/qgb-intro"}}}')}}]);
