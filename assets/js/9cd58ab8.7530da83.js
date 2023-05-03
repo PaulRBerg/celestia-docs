@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcelestia_docs=self.webpackChunkcelestia_docs||[]).push([[116],{9982:e=>{e.exports=JSON.parse('{"title":"Resources","slug":"/category/resources","permalink":"/category/resources","navigation":{"previous":{"title":"Relayer","permalink":"/nodes/relayer"},"next":{"title":"Celestia Node","permalink":"/category/celestia-node"}}}')}}]);
