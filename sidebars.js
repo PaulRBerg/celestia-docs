@@ -170,8 +170,8 @@ const sidebars = {
           },
           { 
             type: "doc", 
-            label: "Consensus full node", 
-            id: "nodes/consensus-full-node" 
+            label: "Full consensus node", 
+            id: "nodes/full-consensus-node" 
           },
           { 
             type: "doc", 
@@ -207,6 +207,11 @@ const sidebars = {
               type: "doc",
               label: "Config.toml guide",
               id: "nodes/config-toml"
+            },
+            {
+              type: "doc",
+              label: "Troubleshooting",
+              id: "nodes/celestia-node-troubleshooting"
             },
           ]
         },
@@ -293,10 +298,21 @@ const sidebars = {
       type: "category",
       label: "Node API",
       link: {
-        type: "generated-index",
+        type: "doc",
+        id: "developers/node-api"
       },
       collapsed: false,
       items: [
+        { 
+          type: "doc", 
+          label: "Node API tutorial", 
+          id: "developers/node-tutorial" 
+        },
+        {
+          type: "link",
+          label: "Node API docs",
+          href: "https://node-rpc-docs.celestia.org/"
+        },
         {
           type: "category",
           label: "Gateway API",
@@ -305,40 +321,10 @@ const sidebars = {
           },
           collapsed: false,
           items: [
-            { 
-              type: "doc", 
-              label: "Gateway API tutorial", 
-              id: "developers/node-tutorial" 
-            },
-            {
-              type: "doc",
-              label: "Gateway API docs",
-              id: "developers/node-gateway-docs"
-            },
             {
               type: "doc",
               label: "Prompt scavenger",
               id: "developers/prompt-scavenger"
-            },
-          ]
-        },
-        {
-          type: "category",
-          label: "RPC API",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: false,
-          items: [
-            { 
-              type: "doc", 
-              label: "RPC API tutorial", 
-              id: "developers/rpc-tutorial" 
-            },
-            {
-              type: "link",
-              label: "RPC API docs",
-              href: "https://node-rpc-docs.celestia.org/"
             },
           ]
         },
@@ -352,39 +338,48 @@ const sidebars = {
 			},
 			collapsed: false,
 			items: [
-				{
+        {
       		type: "doc",
       		label: "Rollkit",
       		id: "developers/rollkit"
-    		},
-    		{
+    		},{
       		type: "category",
       		label: "Optimism",
 					link: {
 						type: "generated-index",
 					},
-					collapsed: false,
+					collapsed: true,
 					items: [
 						{
 							type: "doc",
 							label: "Introduction to OP Stack integration",
               id: "developers/intro-to-op-stack"
 						},
+            {
+							type: "doc",
+              label: "Taro testnet",
+              id: "developers/taro-testnet",
+            },
+						{
+							type: "doc",
+							label: "Deploy a smart contract on Taro testnet",
+              id: "developers/deploy-on-taro"
+						},
+            {
+							type: "doc",
+              label: "Deploy a GM Portal dapp on Taro testnet",
+              id: "developers/gm-portal-taro",
+            },
             // {
-						// 	type: "doc",
-            //   label: "Taro testnet",
-            //   id: "developers/taro-testnet",
+            //   type: "link",
+            //   label: "Deploy a dapp with scaffold-eth",
+            //   href: "https://github.com/jcstein/scaffold-eth",
             // },
-						// {
-						// 	type: "doc",
-						// 	label: "Deploy a smart contract on Taro testnet",
-            //   id: "developers/deploy-on-taro"
-						// },
-            // {
-						// 	type: "doc",
-            //   label: "Deploy a GM Portal dapp on Taro testnet",
-            //   id: "developers/gm-portal-taro",
-            // },
+            {
+              type: "link",
+              label: "Deploy a dapp with thirdweb",
+              href: "https://thirdweb.com/taro-testnet",
+            },
             {
 							type: "doc",
 							label: "Deploy an OP Stack devnet",
@@ -444,8 +439,21 @@ const sidebars = {
           type: "doc",
           label: "IBC Relaying Guide",
           id: "developers/ibc-relayer"
-        },
+        },{
+          type: "link",
+          label: "Sovereign SDK",
+          href: "https://github.com/Sovereign-Labs/sovereign-sdk/tree/main/examples/demo-rollup#demo-rollup",
+        },{
+          type: "link",
+          label: "Dymension",
+          href: "https://dymension.xyz/"
+        }
 			]
+    },
+    {
+      type: "doc",
+      label: "Demos on Celestia",
+      id: "developers/demos",
     },
     {
       type: "doc",
