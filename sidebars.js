@@ -278,6 +278,11 @@ const sidebars = {
           id: "developers/keplr" 
         },
         {
+          type: "doc", 
+          label: "Leap", 
+          id: "developers/leap" 
+        },
+        {
           type: "category",
           label: "Wallet with Celestia App",
           link: {
